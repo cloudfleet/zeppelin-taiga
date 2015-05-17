@@ -1,2 +1,2 @@
 # zeppelin-taiga
-The Docker image for the taiga app on CLoudFleet HQ
+The Docker image for the taiga app on CloudFleet HQ
