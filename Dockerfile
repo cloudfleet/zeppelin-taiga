@@ -1,4 +1,4 @@
-FROM htdvisser/taiga-back:stable
+FROM htdvisser/taiga-back
 
 RUN pip install taiga-contrib-ldap-auth ldap3
 
