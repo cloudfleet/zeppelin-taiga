@@ -1,0 +1,16 @@
+
+$INIT_FLAG_FILE = /usr/local/taiga/logs/.db_init_done
+
+if [ -f $INIT_FLAG_FILE ]
+then
+
+  echo "Bootstrapping database ..."
+  cd /usr/local/taiga/taiga-back/
+  echo "Loading initial user ..."
+  python manage.py loaddata initial_user
+  echo "Loading project templates ..."
+  python manage.py loaddata initial_project_templates
+  echo "Loading initial role ..."
+  python manage.py loaddata initial_role
+  touch $INIT_FLAG_FILE
+fi
