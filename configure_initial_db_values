@@ -12,4 +12,7 @@ then
   echo "Loading initial role ..."
   python manage.py loaddata initial_role
   touch /usr/local/taiga/logs/.db_init_done
+else
+  echo "Database already bootstrapped"
+  ls -lha /usr/local/taiga/logs/
 fi
