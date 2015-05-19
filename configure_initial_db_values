@@ -1,5 +1,5 @@
 
-$INIT_FLAG_FILE = /usr/local/taiga/logs/.db_init_done
+INIT_FLAG_FILE = /usr/local/taiga/logs/.db_init_done
 
 if [ -f $INIT_FLAG_FILE ]
 then
